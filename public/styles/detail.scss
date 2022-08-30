@@ -1,0 +1,88 @@
+.detail-full-part {
+    border: 1px solid rgba(31.5, 31.5, 31.5, 1);
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(31.5, 31.5, 31.5, 1);
+    z-index: 9;
+    position: relative;
+    float: left;
+    width: calc(100% - 2px);
+    overflow: hidden;
+    &:after {
+        background-color: #342e3e;
+        opacity: .9;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+    .detail-normal-part {
+        z-index: 9;
+        color: #fff;
+        position: relative;
+        transition: all .5s ease;
+        display: flex;
+        width: 80%;
+        margin: 30px auto;
+        span {
+            min-width: fit-content;
+        }
+
+        .movie-desc {
+            padding-left: 20px;
+            span {
+                font-size: 14px;
+            }
+            h1 {
+                margin-bottom: 0;
+
+            }
+
+            ul {
+                padding: 20px;
+                list-style-type:square ;
+                margin: 0;
+            }
+            .overview{
+                p {
+                    max-width: 55%;
+                    text-align: justify;
+                }
+                
+            }
+        }
+    }
+
+}
+
+.detail {
+    .header-normal-part {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .upcoming-part {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .loading {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+    .detail-upcoming-part {
+        .movie-list {
+            display: flex;
+            overflow-x: auto;
+            .cards {
+                min-width: 200px;
+            }
+        }
+    }
+    
+}

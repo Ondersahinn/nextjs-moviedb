@@ -1,0 +1,57 @@
+.upcoming-part {
+    float: left;
+    width: 100%;
+    h1 {
+        margin-top: 20px;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    span {
+        font-size: 20px;
+    }
+}
+
+.movie-list {
+    display: grid;
+    float: left;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .cards {
+        position: relative;
+        border: 1px solid #e3e3e3;
+        box-shadow: 0px 5px 4px 0px #e3e3e3;
+        border-radius: 5px;
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: #06b4e4;
+            }
+        }
+        img {
+            object-fit: contain;
+            border-radius: 5px 5px 0px 0px;
+            cursor: pointer;
+        }
+        .relase-date {
+          color: #555555;
+          font-size: 13px;
+          margin-top: 10px;
+        }
+    }
+}

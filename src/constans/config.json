@@ -1,0 +1,6 @@
+{
+  "UPCOMING": "movie/upcoming",
+  "SEARCHMOVIE": "search/movie",
+  "MOVIE": "movie",
+  "SIMILAR":"similar"
+}

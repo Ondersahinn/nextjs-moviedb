@@ -1,0 +1,39 @@
+
+.pagination {
+    float: left;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 10px;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: fit-content;
+        padding: 7px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &.active {
+          border: 1px solid #484848;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+    
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+        &.nextprevbutton {
+          background: #FFFFFF;
+          border: none;
+        }
+      }
+}
